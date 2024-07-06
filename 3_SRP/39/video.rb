@@ -1,3 +1,4 @@
+# SRPに違反しているコード
 class Video
   attr_reader :title, :full_name, :comments
 
@@ -27,6 +28,5 @@ class VideoController
   end
 end
 
-# 責務を3つ持ってしまっている。
-## 低結合でなく、変更に弱い設計
-## 高凝集でない
+# 問題点：責務を3つ持ってしまっている。
+## →高凝集・低結合でなく、変更に弱い設計
