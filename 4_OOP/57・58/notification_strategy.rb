@@ -1,4 +1,4 @@
-# 抽象クラスを用いたコード（SRPの解消）
+# 抽象クラスを用いたコード（SRPの解消）（Strategyパターンと呼ばれる）
 
 # 通知のインターフェース（抽象クラス）
 class AbstractNotification
@@ -38,7 +38,7 @@ email_notification = EmailNotification.new
 email_notification.send(1)
 
 # 新しいパターン("push")を追加する際に、既存の機能部分を修正せずとも、ただそのパターンの具体クラス(PushNotifiation)を追加するだけで良くなった（変更に強くなった）
-# (→また実はORPだけでなくSRPも解消されている)
+# (→また、実はORPだけでなくSRPも解消されている)
 # → いわゆるStrategyパターン
 
 
