@@ -39,6 +39,6 @@ end
 
 ## Decoratorパターンを使った場合の呼び出し
 ## coffee = Coffee.new
-## coffee_with_cream = CreamDecorator(coffee) #注意：インスタンス化して呼び出していない
-## coffee_with_vanilla = VanillaDecorator(coffee)
-## coffee_with_cream_and_vanilla = VanillaDecorator(coffee_with_vanilla) #トッピングの組み合わせを追加(このように呼び出し側で1行追加するだけ)
+## coffee_with_cream = CreamDecorator.new(coffee)
+## coffee_with_vanilla = VanillaDecorator.new(coffee)
+## coffee_with_cream_and_vanilla = VanillaDecorator.new(coffee_with_vanilla) #トッピングの組み合わせを追加(このように呼び出し側で1行追加するだけ)
