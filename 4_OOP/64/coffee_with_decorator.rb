@@ -20,7 +20,7 @@ class Coffee < AbstractCoffee
   end
 end
 
-# コーヒーのトッピング"デコレーター"クラス（デコレーターで"ラップ"してあげる）
+# コーヒーのトッピング"デコレーター"用の抽象クラス（デコレーターで"ラップ"してあげる）
 class CoffeeDecorator
   def initialize(abstract_coffee)
     @decorated_coffee = abstract_coffee
